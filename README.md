@@ -1,155 +1,127 @@
-# 📊 BikeGear Solutions Sales Optimization Case Study
+# 📊 BikeGear Solutions – Sales Optimization Case Study
 
-## Project Summary
+## 🧾 Project Overview
 
-This case study explores how data-driven analysis using **Microsoft Excel** was used to help **BikeGear Solutions**, a global retailer of bike accessories, unlock insights across regions, age demographics, and product categories. The analysis supported smarter marketing, inventory planning, and customer engagement strategies.
+This case study presents a business analysis project for **BikeGear Solutions**, a multinational cycling accessories retailer operating across the **U.S., Canada, UK, and Australia**. The company faced challenges understanding **regional sales trends, customer demographics, product performance**, and **seasonal buying patterns**.
 
-As a **Business Analyst**, I performed a comprehensive analysis on historical sales data, delivering actionable insights and an interactive dashboard that aligns with strategic business needs.
-
----
-
-## 🧰 Tools & Technologies
-- Microsoft Excel (Pivot Tables, Slicers, Charts, IFs, SUMIFs, Formulas)
-- Data Cleaning & Structuring
-- Descriptive Analytics
-- Dashboard Design & Visual Reporting
+As a **Business Analyst**, I used **Microsoft Excel** to perform an end-to-end data analysis of historical sales data to uncover insights and develop a strategy that improves marketing focus, product planning, and inventory management.
 
 ---
 
-## 🧩 Dataset Overview
+## 📷 Dashboard Preview
 
-The dataset covered sales transactions with the following attributes:
+![Insights Screenshot](./BikeGear.png)
 
-- **Demographics**: `Customer_Age`, `Customer_Gender`
-- **Geography**: `Country`, `State`
-- **Product Info**: `Product_Category`, `Sub_Category`, `Product`
-- **Sales Metrics**: `Order_Quantity`, `Unit_Cost`, `Unit_Price`, `Revenue`, `Profit`, `Cost`
-- **Time Dimensions**: `Date`, `Month`, `Year`
+## 🛠 Tools & Technologies
 
----
-
-## 🧭 Project Workflow
-
-| Step | Activity |
-|------|----------|
-| ✅ Step 1 | Data Collection & Cleaning |
-| ✅ Step 2 | Exploratory Data Analysis (EDA) |
-| ✅ Step 3 | Data Modelling & Segmentation |
-| ✅ Step 4 | Dashboard Design & Visualization |
-| ✅ Step 5 | Recommendations & Insights Presentation |
+- **Microsoft Excel** (Pivot Tables, Charts, Slicers, SUMIFS, IF, VLOOKUP)
+- Descriptive Analysis & Segmentation
+- KPI Calculation & Dashboard Design
+- Data Cleaning and Structuring
 
 ---
 
-## 🔧 Data Processing Breakdown
+## 📊 Dashboard File
 
-### 🧹 Data Cleaning
+Download the interactive Excel dashboard here:
 
-To ensure accurate analysis, I performed the following data cleaning steps in Excel:
+📎 [BikeGearSalesDashboard.xlsx](./BikeGearSalesDashboard.xlsx)
 
-- **Removed blanks and duplicates** in key columns (e.g., Product, Revenue, Country)
-- **Standardized text cases** using `PROPER()`, `UPPER()`, and `TRIM()` functions
-- **Handled missing values** using default placeholders or calculated averages where necessary
-- **Converted date formats** using `TEXT()`, `DATEVALUE()`, and ensured correct mapping to Year, Month, and Day columns
-- **Verified numeric data types** for cost, profit, and revenue calculations
 
-### 🧩 Data Modelling & Structuring
+---
 
-- **Segmented Age Groups**:  
-  Used Excel formula logic to group ages into:
-  - `< 25` → Youth  
-  - `25–35` → Young Adult  
-  - `> 35` → Adult
+## 🔧 Analysis Workflow
 
-- **Calculated KPIs**:
-  - Revenue: `=Order_Quantity * Unit_Price`
-  - Cost: `=Order_Quantity * Unit_Cost`
-  - Profit: `=Revenue - Cost`
+### 1. Data Cleaning
+- Removed blanks and duplicates in customer, region, and product fields.
+- Standardised text using `TRIM()`, `PROPER()`, and manual cleanup.
+- Formatted date fields to extract `Day`, `Month`, `Year`.
+- Ensured numerical consistency for `Order Quantity`, `Revenue`, `Profit`.
 
-- **Created helper columns** for time analysis (e.g., Month Name, Year, Quarter) to enable trend analysis over time
+### 2. Data Modelling
+- Created **calculated fields** for Revenue, Cost, and Profit.
+- Segmented Age Groups:  
+  - `< 25`: Youth  
+  - `25–35`: Young Adult  
+  - `> 35`: Adult
+- Created time-based groupings for seasonal analysis.
+- Structured clean data tables for use in pivot reporting.
 
-- **Categorized Products** by subcategory for detailed sales breakdown
-
-- **Structured data** into clean tables to enable dynamic pivoting and dashboard use
-
-### 📊 Data Visualization & Dashboard Creation
-
-Built a fully interactive Excel dashboard that includes:
-
-- **Pivot Charts** for revenue, profit, and order quantity by:
-  - Region (Country, State)
-  - Age Group and Gender
-  - Product Category and Sub-Category
-  - Monthly/Seasonal Trends
-
-- **Slicers & Timelines** to allow end users to filter and explore the data dynamically
-
-- **KPI Summary Cards** for:
-  - Total Revenue
-  - Total Profit
-  - Total Units Sold
-  - Top Age Group and Region
-
-- **Color-coded insights** to highlight top-performing categories and low-yield areas
+### 3. Data Visualization
+- Built an **interactive Excel dashboard**:
+  - Revenue and Profit by Region
+  - Customer Orders by Age Group and Gender
+  - Sales Trends by Month and Year
+  - Product Category Breakdown
+- Used slicers and timelines for dynamic filtering
 
 ---
 
 ## 📈 Business Questions Answered
 
-- **Which regions generate the most revenue?**
-- **Which age groups and gender are the top buyers?**
-- **What product subcategories perform best in terms of profit and volume?**
-- **What are the seasonal trends in sales volume and profit?**
+- Which **countries and states** generate the most revenue?
+- Which **age groups and genders** buy the most?
+- What are the best-performing **product categories**?
+- How does **seasonality** impact sales volume and profit?
 
 ---
 
-## 📌 Key Performance Indicators (KPIs)
+## 📌 Key Metrics (KPIs)
 
 - Total Revenue
 - Total Profit
 - Total Order Quantity
-- Top 3 Regions by Profit
-- Top Age Group by Revenue
-- Best-Selling Product Sub-Category
+- Units Sold by Category
+- Revenue by Country & Age Group
+- Seasonal Sales Volume
 
 ---
 
-## 📊 Dashboard
-
-Explore the **interactive Excel dashboard** used to uncover trends and segment data:
-
-📎 [Download Dashboard Excel File](./BikeGear_Solutions_sales_data.xlsx)
-
----
-
-## 💡 Key Insights & Recommendations
+## 💡 Insights & Recommendations from Analysis
 
 ### 📍 Insights
 
-- 🇺🇸 **United States** was the most profitable market, followed by Canada.
-- 🧑‍💼 **Adults (36+)** accounted for the highest revenue share.
-- 🚴 **Bike Racks** and **Protective Gear** were the most popular and profitable subcategories.
-- 📆 Sales **peaked during Spring and Summer months**, aligning with the cycling season.
+#### 1. Top Markets by Revenue
+- 🇺🇸 U.S.: **$30.81M**, 🇦🇺 Australia: **$25.44M**
+- 🇬🇧 U.K.: **$11.08M**, 🇨🇦 Canada: **$8.01M**
+> **Recommendation:** Prioritize U.S. and Australia for future marketing efforts. Reassess Canada's local strategy.
 
-### ✅ Recommendations
+#### 2. Demographic Strength
+- **Adults (35+)**: 47.2% of orders  
+- **Young Adults (24–35)**: 36.7%  
+- **Youth (<24)**: 16.1%
+> **Recommendation:** Launch targeted campaigns for young adults. Build bundles around adult lifestyle products.
 
-1. **Regional Marketing Focus**  
-   Prioritise marketing campaigns in the U.S. and Canada while exploring ways to grow underperforming regions like Australia.
+#### 3. Product Category Performance
+- **Accessories**: 79% of volume  
+- **Clothing**: 254K units  
+- **Bikes**: Only 36K units
+> **Recommendation:** Focus promotions on accessories. Consider bundling high-margin items.
 
-2. **Demographic Targeting**  
-   Tailor marketing messages for the "Adult" segment (36+), with gender-specific promotions where applicable.
+#### 4. Seasonality Trends
+- **Peak Month**: December (133K units)  
+- **Lowest Month**: July (90K units)
+> **Recommendation:** Plan stock ahead of Q4. Use flash sales and events during mid-year lulls.
 
-3. **Product Strategy**  
-   Increase stock levels and marketing for high-performing subcategories like Bike Racks. Consider phasing out low-performing ones.
+---
 
-4. **Seasonal Planning**  
-   Boost inventory before Q2 and Q3 to align with peak seasonal demand. Plan promotions in advance for spring launches.
+### ✅ Strategic Recommendations
+
+1. **Prioritize U.S. and Australia**
+   - Invest in campaigns across top markets contributing over 60% of revenue.
+   - Revisit Canada’s performance with localized outreach.
+
+2. **Target Young Adults (24–35)**
+   - Use digital-first campaigns, loyalty apps, and influencer outreach for tech-savvy young customers.
+
+3. **Double Down on Accessories**
+   - Bundle accessories with bikes or clothing.
+   - Promote accessories during slow sales months.
+
+4. **Plan Ahead for Seasonal Peaks**
+   - Prepare inventory and promotions by Q3 for Black Friday and holiday season.
+   - Stimulate summer sales with community rides, flash deals, or cycling events.
 
 ---
 
-## 🧠 Learning Outcomes
 
-- Gained practical Excel experience in real-world sales analysis
-- Strengthened skills in data storytelling and KPI visualization
-- Applied business analysis methods to support marketing and inventory strategy
-
----
