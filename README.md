@@ -117,7 +117,7 @@ Built a fully interactive Excel dashboard that includes:
 
 Explore the **interactive Excel dashboard** used to uncover trends and segment data:
 
-📎 [Download Dashboard Excel File](./BikeGearSalesDashboard.xlsx)
+📎 [Download Dashboard Excel File](./BikeGear_Solutions_sales_data.xlsx)
 
 ---
 
